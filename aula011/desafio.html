@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: rgb(31, 31, 31);
+            color: #fff;
+            font-family: arial;
+        }
+
+        h1{
+            text-align: center;
+            font-size: 2.5rem;
+        }
+
+        .cla{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        p{
+            margin: 1.4rem;
+            font-size: 1.4rem;
+        }
+
+        #pais{
+            border-radius: 0.4rem;
+            outline: none;
+            border: none;
+            width: 17rem;
+            height: 2rem;
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        #veri{
+            margin: 1rem;
+            width: 17rem;
+            height: 2.3rem;
+            color: #fff;
+            border-radius: 0.4rem;
+            border: 2px solid #00f;
+            font-size: 1.2rem;
+            background-color: rgb(31, 31, 31);
+            cursor: pointer;
+        }
+
+        #veri:hover{
+            background-color: #00f;
+            transition-duration: .3s;
+        }
+
+        #ver{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <div class="cla">
+        <p>Coloque de onde você é :</p>
+        <div class="inp">
+            <input type="text" name="pais" id="pais">
+        </div>
+        <div class="inp">
+            <input id="veri" type="button" value="Verificar" onclick="origem()">
+        </div>
+    </div>
+    <div id="ver"></div>
+    <script>
+        function origem(){
+            var pais = window.document.getElementById(`pais`).value
+            var ver = window.document.getElementById(`ver`)
+            if(pais === `brasil`){
+                ver.innerHTML += `<p>Você é brasileiro</p>`
+            } else{
+                ver.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
