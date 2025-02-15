@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #fff;
 }
 
 body{
@@ -18,28 +17,25 @@ header{
 
 header h1{
     text-align: center;
+    color: #fff;
 }
 
 section{
     background-color: #fff;
     width: 31rem;
     border-radius: 0.4rem;
-    padding: 0.4rem;
+    padding: 1rem;
     margin: auto;
     box-shadow: 5px 5px 15px #000000a2;
-    text-align: center;
 }
 
-#msg {
-    font-size: 1.4rem;
-    margin-top: 1rem;
+#msg p{
     margin-bottom: 1.4rem;
-    color: #000;
 }
 
 
 
-#foto img{
+#res img{
     width: 13rem;
     height: 13rem;
     border-radius: 50%;
@@ -49,4 +45,5 @@ section{
 footer p{
     text-align: center;
     margin-top: 1.4rem;
+    color: #fff;
 }
