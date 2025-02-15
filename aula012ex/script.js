@@ -1,0 +1,1 @@
+window.alert(`Foda-se kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk`)
