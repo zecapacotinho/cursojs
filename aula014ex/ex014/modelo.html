@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div class="cont">
+            <label for="num">Início:</label>
+            <input type="number" name="num" id="num" class="bar">
+            
+        </div>
+        <div class="cont">
+            <label for="fim">Fim:</label>
+            <input type="number" name="fim" id="fim" class="bar">
+            
+        </div>
+        <div class="cont">
+            <label for="pass">Passo:</label>
+            <input type="number" name="pass" id="pass" class="bar">
+        </div>
+        <div class="cont">
+            <input class="but" type="button" value="Contar" onclick="contador()">
+        </div>
+        <div id="msg">Contador: </div>
+    </section>
+    <footer>
+        <p>©DN1-Code</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
