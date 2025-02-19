@@ -13,9 +13,18 @@ function contador(){
         var f = Number(fim.value)
         var p = Number(pass.value)
 
-         for( var c = n; c <= f; c += p){
-            msg.innerHTML += `👉 ${c} `
-         } 
+        if(n < f){
+            //Contagem crescente 
+           for( var c = n; c <= f; c += p){
+                msg.innerHTML += `👉 ${c} `
+            } 
+        } else{
+            //Contagem regressiva
+            for(var c = n; c >= f; c -= p){
+                msg.innerHTML += `👉 ${c} `
+            }
+        }
+          
     }
     
 }
