@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+}
+
+header{
+    text-align:  center;
+    margin-bottom: 1.4rem;
+}
+
+main{
+    background-color: #fff;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+    width: 35rem;
+    padding: 1.4rem;
+    margin: auto;
+    border-radius: 0.4rem;
+    box-shadow: 15px 15px 10px #0000004d;
+}
+
+.valor{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+input{
+    width: 12rem;
+    height: 2rem;
+    font-size: 18px;
+    border-radius: 0.4rem;
+    outline: none;
+    border: 1px solid #000;
+    
+}
+
+#but{
+    border: 2px solid #00f;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+#but:hover{
+    transition-duration: .3s;
+    background-color: #00f;
+    color: #fff;
+}
+
+
+
+footer{
+    margin-top: 1.4rem;
+    text-align: center;
+}

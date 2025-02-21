@@ -9,7 +9,7 @@ function tabuada(){
         var item = document.createElement(`option`)
         var n = Number(num.value)
         for(var c = 1; c <= 10; c++){
-            item.text = `${n} X ${c} = ${n*c}`
+            item.text += `${n} X ${c} = ${n*c}|`
             msg.appendChild(item)
         }
     }
